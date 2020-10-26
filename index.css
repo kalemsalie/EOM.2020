@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+body {
+  margin: 0;
+  padding: 0;
+  background: url("crowdwithstage.jpg");
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.box-side-right,.box-side-left{
+  width: 10em;
+  background: rgba(0, 0, 0, 0.1);
+  padding: 4em;
+  padding-top: 0em;
+  text-align: center;
+  color: white;
+  font-family: "Century Gothic", sans-serif;
+  vertical-align: middle;
+  margin-top: 5%;
+  height: 7em;
+  overflow: hidden;
+  border-radius: 70% 30% 61% 100% / 60% 40% 60% 40%;
+}
+.box-side-right:hover,.box-side-left:hover{
+  background: rgba(0, 0, 0, 0.5);
+}
+.box {
+  width: 20em;
+  background: rgba(0, 0, 0, 0.1);
+  padding: 4em;
+  text-align: center;
+  color: white;
+  font-family: "Century Gothic", sans-serif;
+  vertical-align: middle;
+  margin-top: 5%;
+  border-radius: 20% 84% 41% 73% / 80% 39% 61% 30%;
+}
+
+.box-img {
+  border-radius: 50%;
+  width: 10em;
+  height: 10em;
+}
+.box h1 {
+  font-size: 4em;
+  letter-spacing: 0.4px;
+  font-weight: 100;
+}
+.box h5 {
+  font-size: 2em;
+  letter-spacing: 0.3em;
+  font-weight: 100;
+}
+.box p {
+  text-align: center;
+  font-family: 'Rock Salt', cursive;
+  font-size: small;
+
+}
+
+h1{
+  margin: auto;
+  font-family: 'Rock Salt', cursive;
+}
+/*----------------------------------------------Socials----------------------------------------------------------*/
+.fa {
+  padding: 1em;
+  font-size: 1em;
+  width: 1em;
+  text-align: center;
+  text-decoration: none;
+  margin: 0.5em 0.2em;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-soundcloud {
+  background: #d45013;
+  color: white;
+}
+.fa-twitter {
+  background: #138dd4;
+  color: white;}
+ 
+.fa-instagram {
+    background: #eb4381;
+    color: white;}
+
+.fa-youtube {
+      background: #f01c1c;
+      color: white;}
+/*---------------------------------------Contact and  info icons------------------------*/
+.fa-drivers-license-o{
+  size: 3em;
+  color: aliceblue;
+  background: rgba(248, 232, 0, 0.2);
+  border-radius: 70% 30% 30% 70% / 60% 40% 60% 40%;
+}
+.fa-phone{
+  size: 3em;
+  color: aliceblue;
+  background: rgba(58, 248, 0, 0.2);
+  border-radius: 70% 30% 30% 70% / 60% 40% 60% 40%;
+}
+#mobile{
+  display: none;
+}
+/*-----------------------------------------------media Query for phones----------------*/
+@media only screen and (max-width: 800px) {
+  
+  .box-side-right,.box-side-left{
+    display: none;
+  }
+  body{
+    background: url('concert_crowd.jpg');
+  }
+  .box{
+    background: rgba(0, 0, 0, 0.5);
+    height: 90%;
+  }
+  #mobile{
+    font-size:small;
+    display:inline;
+  }
+}
